@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const PhotoCart = ({ photo }) => {
-  console.log(photo.url);
   return (
     <Link
       href={`photos/${photo.id}`}
