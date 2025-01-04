@@ -22,9 +22,9 @@ const PhotoDetails = async ({ id, lang }) => {
       <div className='p-6 border rounded-xl col-span-12 lg:col-span-4'>
         <h2 className='text-lg lg:text-2xl font-bold mb-2'>{photo.title}</h2>
         <div className='text-xs lg:text-sm text-black/60 mb-6'>
-          {photo.tags.map((tag) => (
-            <span key={tag.tag}>{`#${tag} `}</span>
-          ))}
+          {photo.tags.map((tag, index) => {
+            `#${tag} `;
+          })}
         </div>
         <div className='space-y-2.5 text-black/80 text-xs lg:text-sm'>
           <div className='flex justify-between'>
